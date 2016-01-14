@@ -1,6 +1,6 @@
 {
   "name": "mt_fe_codecheck",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "code style check for mt fe",
   "main": "index.js",
   "scripts": {

@@ -20,6 +20,7 @@ var git = path.resolve(root, '.git')
   , hooks = path.resolve(git, 'hooks')
   , precommit = path.resolve(hooks, 'pre-commit');
 
+console.log(git);
 //
 // Bail out if we don't have an `.git` directory as the hooks will not get
 // triggered. If we do have directory create a hooks folder if it doesn't exist.
