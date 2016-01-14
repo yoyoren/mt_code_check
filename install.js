@@ -26,7 +26,7 @@ var git = path.resolve(root, '.git')
 //
 if (!exists(git) || !fs.lstatSync(git).isDirectory()) return;
 if (!exists(hooks)) fs.mkdirSync(hooks);
-
+console.log(1);
 //
 // If there's an existing `pre-commit` hook we want to back it up instead of
 // overriding it and losing it completely as it might contain something

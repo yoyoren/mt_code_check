@@ -6,6 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoyoren/mt_code_check.git"
+  },
+
+  "dependencies": {
+    "cross-spawn": "2.0.x",
+    "which": "1.2.x"
+  },
+  
+  "devDependencies": {
+    "assume": "1.3.x",
+    "istanbul": "0.4.x",
+    "mocha": "2.3.x",
+    "mt_fe_codecheck": "git@github.com:yoyoren/mt_code_check.git"
+  },
   "keywords": [
     "code",
     "check"
