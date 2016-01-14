@@ -1,11 +1,18 @@
 {
   "name": "mt_fe_codecheck",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "code style check for mt fe",
-  "main": "index.js",
+  "main": "install.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+     "example-fail": "echo \"This is the example hook, I exit with 1\" && exit 1",
+     "example-pass": "echo \"This is the example hook, I exit with 0\" && exit 0",
+     "install": "node install.js",
+     "test": "mocha test.js",
+     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- test.js",
+     "uninstall": "node uninstall.js"
   },
+
   "repository": {
     "type": "git",
     "url": "git@github.com:yoyoren/mt_code_check.git"
