@@ -24,9 +24,19 @@ var git = path.resolve(root, '.git')
 // Bail out if we don't have an `.git` directory as the hooks will not get
 // triggered. If we do have directory create a hooks folder if it doesn't exist.
 //
-if (!exists(git) || !fs.lstatSync(git).isDirectory()) return;
+
+if (!exists(git) || !fs.lstatSync(git).isDirectory() ) {
+    var _git = '.git';
+    if (!exists(_git) || !fs.lstatSync(_git).isDirectory() ) {
+      return;
+    }else{
+      git = _git;
+      hooks = path.resolve(git, 'hooks')
+      precommit = path.resolve(hooks, 'pre-commit');
+    }
+}
 if (!exists(hooks)) fs.mkdirSync(hooks);
-console.log(1);
+
 //
 // If there's an existing `pre-commit` hook we want to back it up instead of
 // overriding it and losing it completely as it might contain something
