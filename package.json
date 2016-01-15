@@ -1,6 +1,6 @@
 {
   "name": "mt_fe_codecheck",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "code style check for mt fe",
   "main": "install.js",
   "scripts": {
@@ -20,13 +20,15 @@
 
   "dependencies": {
     "cross-spawn": "2.0.x",
-    "which": "1.2.x"
+    "which": "1.2.x",
+    "jshint": "2.8.x"
   },
   
   "devDependencies": {
     "assume": "1.3.x",
     "istanbul": "0.4.x",
     "mocha": "2.3.x",
+    "jshint": "2.8.x",
     "mt_fe_codecheck": "git@github.com:yoyoren/mt_code_check.git"
   },
   "keywords": [
